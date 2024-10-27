@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+<my-blog-section>
+    <div class="heading abc">
+        <h1>Your <span>Personal</span> Space 🕸️</h1>
+    </div>
+
+    <div class="blogs-container">
+        <% if (blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+                <div class="blog-card">
+                    <h2><%= blog.title %></h2>
+                    <img src="<%= blog.bannerImage %>" alt="Banner Image" class="blog-banner">
+                    <p><%= blog.article.substring(0, 100) %>...</p>
+                    <a class="read-more" onclick="showFullArticle('<%= escape(blog.article) %>')">Read More</a>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No blogs available.</p>
+        <% } %>
+    </div>
+
+    <div id="articleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Full Article</h2>
+            <p id="fullArticleContent"></p>
+        </div>
+    </div>
+</my-blog-section>
+<%- include("partials/footer.ejs") %>

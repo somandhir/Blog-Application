@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <header class="header">
+    <div class="navbar">
+      <a href="/">HOME</a>
+      <a href="/blogs">BLOGS</a>
+      <a href="/about">ABOUT</a>
+      <a href="/yourBlogs">YOUR BLOGS</a>
+      <a href="/contact">CONTACT</a>
+
+      <a href="/createBlogs" class="button-74">Create Blog</a>
+    </div>
+    <div id="menu-btn" class="fas fa-bars-staggered"></div>
+  </header>
+
+
+
+
+
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="/images/home%20image.jpg" alt="Home Image">
+                <div class="content">
+                    <div class="author">Zooey Deschanel</div>
+                    <div class="title">JOURNEY TO HEAVEN</div>
+                    <div class="topic">BEAUTY</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons" >
+                        <button class="read-more-btn" data-content="<%= fullDescription1 %>">READ MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/Montage.jpg" alt="Montage">
+                <div class="content">
+                    <div class="author">HANNA SIMONE</div>
+                    <div class="title">FALLING IN LOVE</div>
+                    <div class="topic">MONTAGE</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons" >
+                        <button class="read-more-btn" data-content="<%= fullDescription2 %>">READ MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/travelling.jpg" alt="Rise of the Queen">
+                <div class="content">
+                    <div class="author">OLIVIA MUNN</div>
+                    <div class="title">A TRIP</div>
+                    <div class="topic">TRAVELLING</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button class="read-more-btn" data-content="<%= fullDescription3 %>">READ MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/cup.jpg" alt="Till Death">
+                <div class="content">
+                    <div class="author">JUSTIN LONG</div>
+                    <div class="title">INNER PEACE</div>
+                    <div class="topic">SUNNER</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button class="read-more-btn" data-content="<%= fullDescription4 %>">READ MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/bike.jpg" alt="Till Death">
+                <div class="content">
+                    <div class="author">SCHMIDT</div>
+                    <div class="title">WHERE TO GO</div>
+                    <div class="topic">HIMALYA</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button class="read-more-btn" data-content="<%= fullDescription5 %>">READ MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="/images/home%20image.jpg" alt="Home Image">
+                <div class="content">
+                    <div class="title">
+                        Journey To Heaven
+                    </div>
+                    <div class="description">
+                        BEAUTY
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/Montage.jpg" alt="Montage">
+                <div class="content">
+                    <div class="title">
+                        Falling in love 
+                    </div>
+                    <div class="description">
+                        MONTAGE
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/travelling.jpg" alt="">
+                <div class="content">
+                    <div class="title">
+                        A Trip 
+                    </div>
+                    <div class="description">
+                        TRAVELLING
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/cup.jpg" alt="Till Death">
+                <div class="content">
+                    <div class="title">
+                       Inner Peace
+                    </div>
+                    <div class="description">
+                        SUNNER
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/bike.jpg" alt="bike">
+                <div class="content">
+                    <div class="title">
+                       WHERE TO GO
+                    </div>
+                    <div class="description">
+                        HIMALYA
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+
+    
+
+
+
+<%- include("partials/footer.ejs") %>

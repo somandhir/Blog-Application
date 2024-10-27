@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --bg-color: rgba(240, 214, 187);
+  --dark-bg-color: rgb(218, 186, 151);
+  --text-color: rgba(53, 53, 53);
+  --white: #fff;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark-bg-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header.active {
+  backdrop-filter: blur(1rem);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(1rem);
+}
+
+.header .navbar {
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.header .navbar a:hover {
+  color: var(--dark-bg-color);
+}
+
+#menu-btn {
+  display: none;
+  font-size: 2.4rem;
+  color: var(--text-color);
+  z-index: 100000;
+}
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+/* header css ends */
+
+
+
+body {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-image: url(./images/home\ image\ 2.jpg); /* Use %20 for space */
+    background-repeat: no-repeat; /* Separate property for no-repeat */
+    background-size: cover; /* Optional: covers the entire body */
+    background-position: top; /* Optional: centers the image */
+}
+
+body .heading{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body .heading h1{
+    font-family: "Playfair Display", serif;
+    font-size: 10rem;
+    color: var(--text-color);
+    text-align: center;
+}
+body .heading h1 span{
+    font-family: "Danfo", serif;
+    color: #422800;
+}
+body .sub-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .sub-heading h3{
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--text-color);
+}
+.home-btn{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* your blogs css */
+.abc{
+  margin-top: 10rem !important;
+
+}
+
+.blogs-container {
+  backdrop-filter: blur(1rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  padding: 20px;
+}
+
+.blog-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: 300px; /* Adjust as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.blog-card h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.blog-card p{
+  font-size: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+    /* Basic styles for modal */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+      font-size: 2rem;
+      text-align: justify;
+  }
+
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Existing CSS... */
+
+/* Media Queries */
+@media (max-width:1280px) {
+    html{
+        font-size: 55%;
+        scroll-padding-top: 6.5rem;
+    } 
+}
+
+
+@media (max-width: 768px) {
+    html{
+        font-size: 45%;
+    }
+    body .heading{
+        margin: 0rem;
+    
+    }
+    .header {
+        position: fixed; /* Allow for absolute positioning inside */
+        background-color: var(--bg-color);
+    }
+    body .sub-heading h3{
+        font-size: 3rem;
+    }
+    body .heading h1{
+        font-size: 8rem;
+    }
+
+    .home-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .header .navbar {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;left: 0;right: 0;
+        background: var(--light-white);
+        backdrop-filter: blur(1rem);  /*Applies a blur effect to the area behind the .navbar.*/
+        /*like ye aage ke liye hai, ki iskey pich jo bhi content hoeyga , vo blur ho jaega*/
+        border-top: var(--border);
+        padding: 1rem;
+        clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    }
+
+    .header .navbar.active {
+        display: flex !important; /* Show the navbar when active */
+    }
+
+    #menu-btn.fa-xmark{
+        transform: rotate(90deg);
+    }
+
+    #menu-btn {
+        display: block; /* Show the menu button on smaller screens */
+        cursor: pointer; /* Change cursor to pointer */
+        font-size: 2.4rem; /* Ensure size is consistent */
+        color: var(--text-color); /* Match color */
+        position: absolute; /* Position it relative to header */
+        top: 1rem; /* Adjust to your preference */
+        right: 1rem; /* Align to the right side */
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 1rem 0; /* Space out the links */
+        font-size: 1.5rem; /* Keep font size same */
+    }
+}
+
+@media (max-width: 410px) {
+    body .sub-heading h3{
+        color: wheat;
+    }
+
+}
